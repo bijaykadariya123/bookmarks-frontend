@@ -1,10 +1,11 @@
 import { useLoaderData, Form, Link } from "react-router-dom";
+import '../aubreystyles.scss'
 
 
 function Show(props) {
   const bookmark = useLoaderData();
 
-  return (
+  return ( <div className="showPage">
     <div className="bookmark">
       <Link to={`${bookmark.url}`}>
         <h1>{bookmark.title}</h1>
@@ -32,6 +33,7 @@ function Show(props) {
         <input type="submit" value={`Delete ${bookmark.title}`} />
       </Form>
     </div>
+  </div>
   );
 }
 
