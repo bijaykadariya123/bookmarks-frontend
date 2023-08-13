@@ -1,0 +1,25 @@
+body{
+    background-image: url("https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: cover;
+    margin: 0;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding: 20pt;
+}
+
+.showPage {
+    border: 0;
+    background-color: aliceblue;
+    width: 300pt;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    padding: 20pt;
+}
+
+.showPage h1, Form, h3{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+}
