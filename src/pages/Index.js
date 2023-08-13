@@ -13,17 +13,14 @@ function Index(props) {
       </Form>
 
       <h2>Bookmarks</h2>
-      {bookmarks.map((bookmark) => (
-        <div key={bookmark._id} className="bookmark">
+      {bookmarks.map((bookmark) => {
+        return <div key={bookmark._id} className="bookmark">
           <Link to={`/${bookmark._id}`}>
-            <h1>{bookmark.name}</h1>
+            <h3>{bookmark.title}</h3>
           </Link>
-          <img src={bookmark.image} alt={bookmark.name} />
-          <h3>{bookmark.title}</h3>
         </div>
-      ))}
+    })}
     </div>
-  );
-}
+)}
 
 export default Index;
