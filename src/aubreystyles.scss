@@ -5,21 +5,40 @@ body{
     display: flex;
     justify-items: center;
     justify-content: center;
-    padding: 20pt;
 }
 
 .showPage {
     border: 0;
-    background-color: aliceblue;
-    width: 300pt;
+    background-color: rgb(181, 245, 233);
+    color: rgb(8, 118, 110);
     display: flex;
     justify-self: center;
     justify-content: center;
-    padding: 20pt;
+    margin: 10em;
 }
 
-.showPage h1, Form, h3{
+.showPage h1, h3, input, form{
     display: flex;
     justify-content: center;
     justify-self: center;
+    font-family: 'Victor Mono', monospace;
+    margin: 0;
+    padding: 5pt
+}
+
+h1 {
+    font-size: 30pt;
+}
+
+.bookmark {
+    margin: 30pt;
+}
+
+a {
+    color: rgb(136, 3, 136);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(247, 114, 247);
 }
