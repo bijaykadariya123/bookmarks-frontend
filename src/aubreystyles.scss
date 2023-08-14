@@ -1,0 +1,44 @@
+body{
+    background-image: url("https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: cover;
+    margin: 0;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.showPage {
+    border: 0;
+    background-color: rgb(181, 245, 233);
+    color: rgb(8, 118, 110);
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    margin: 10em;
+}
+
+.showPage h1, .showPage h3, .showPage input, .showPage form{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    font-family: 'Victor Mono', monospace;
+    margin: 0;
+    padding: 5pt
+}
+
+.showPage h1 {
+    font-size: 30pt;
+}
+
+.bookmark {
+    margin: 30pt;
+}
+
+.showPage a {
+    color: rgb(136, 3, 136);
+    text-decoration: none;
+}
+
+.showPage a:hover {
+    color: rgb(247, 114, 247);
+}

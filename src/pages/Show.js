@@ -1,42 +1,41 @@
-import { useLoaderData, Form } from "react-router-dom";
+import { useLoaderData, Form, Link } from "react-router-dom";
+import '../aubreystyles.scss'
+
 
 function Show(props) {
   const bookmark = useLoaderData();
 
-  return (
+  return ( <div className="showPage">
     <div className="bookmark">
-      <h1>{bookmark.name}</h1>
-      <h2>{bookmark.title}</h2>
-      <img src={bookmark.image} alt={bookmark.name} />
+      <Link to={`${bookmark.url}`}>
+        <h1>{bookmark.title}</h1>
+      </Link>
 
-      <h2>Update {bookmark.name}</h2>
+      <h3>Update {bookmark.title}:</h3>
       <Form action={`/update/${bookmark._id}`} method="post">
-        <input
-          type="input"
-          name="name"
-          placeholder="bookmark's name"
-          defaultValue={bookmark.name}
-        />
-        <input
-          type="input"
-          name="image"
-          placeholder="bookmark's picture"
-          defaultValue={bookmark.image}
-        />
         <input
           type="input"
           name="title"
           placeholder="bookmark's title"
           defaultValue={bookmark.title}
         />
-        <input type="submit" value={`update ${bookmark.name}`} />
+
+        <input
+          type="input"
+          name="url"
+          placeholder="bookmark's URL"
+          defaultValue={bookmark.url}
+        />
+        <input type="submit" value={`Update ${bookmark.title}`} />
       </Form>
-      <h2>Delete Person</h2>
+      <h3>Delete Bookmark:</h3>
       <Form action={`/delete/${bookmark._id}`} method="post">
-        <input type="submit" value={`delete ${bookmark.name}`} />
+        <input type="submit" value={`Delete ${bookmark.title}`} />
       </Form>
     </div>
+  </div>
   );
-}
+};
+
 
 export default Show;
