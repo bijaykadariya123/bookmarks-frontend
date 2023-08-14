@@ -13,7 +13,7 @@ code {
 }
 
 .nav{
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   padding:15px;
   }
 
@@ -30,6 +30,52 @@ code {
     color: rgba(255, 255, 255, 0.5);
     transform: scale(1.2);
   }
+  .createBookmark{
+    font-family: 'Fjalla One', sans-serif;
+  /* font-family: 'Victor Mono', monospace; */
+  font-weight:500;
+  color:rgba(252, 249, 249, 0.8);
+  margin-top:15px;
+  }
   .indexcss{
-    
+    background-image: url("https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    /* background-color: black; */
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+  }
+
+  .index-main{
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+  }
+  .bookmarktitle{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    font-weight: none;
+    padding:15px;
+    margin-bottom: -15px;
+  
+  }
+  .labels{
+    color:aliceblue;
+    font-size: large;
+  }
+
+  .bookmarkList{
+    font-family: 'Victor Mono', monospace;
+    /* font-family: 'Fjalla One', sans-serif; */
+  }
+  .bookmarktitle:hover{
+    color: grey;
+    text-decoration: none;
+
   }
