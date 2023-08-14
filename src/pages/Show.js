@@ -35,6 +35,7 @@ function Show(props) {
     </div>
   </div>
   );
-}
+};
+
 
 export default Show;
